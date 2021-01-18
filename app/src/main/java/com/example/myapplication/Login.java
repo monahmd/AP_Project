@@ -11,8 +11,8 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
 
-        Button login1 = this.findViewById(R.id.login1);
-        EditText newTitleTaskText = this.findViewById(R.id.username);
-        EditText newDescriptionTaskText = this.findViewById(R.id.password);
+        Button login1 = this.findViewById(R.id.login_login);
+        EditText username = this.findViewById(R.id.username_login);
+        EditText password = this.findViewById(R.id.password_login);
     }
 }
