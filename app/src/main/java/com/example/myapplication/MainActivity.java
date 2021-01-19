@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
         Login_activity.socket = socket;
         Login_activity.dataInputStream = inputStream;
         Login_activity.dataOutputStream = outputStream;
+        Register.socket = socket;
+        Register.dataInputStream = inputStream;
+        Register.dataOutputStream = outputStream;
 
     }
 
