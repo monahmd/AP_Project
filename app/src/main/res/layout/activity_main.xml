@@ -16,7 +16,7 @@
         android:text="عضو هستم (ورود)"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:backgroundTint="#4CAF6D"
+        app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -11,4 +11,8 @@
     <color name="gray">#626262</color>
     <color name="light_blue">#D5E6FF</color>
     <color name="background_blue">#FF053A88</color>
+    <color name="dark_blue">#C3060B33</color>
+    <color name="dark_blue_edit">#E9060B33</color>
+    <color name="white_light">#94FFFFFF</color>
+    <color name="green" >#4CAF6D</color>
 </resources>
