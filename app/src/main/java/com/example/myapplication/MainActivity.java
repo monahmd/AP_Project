@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AudioPlay.soundPlayer(this, R.raw.music);
         Intent loginIntent = new Intent(this , Login_activity.class);
         login = findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {

@@ -10,11 +10,19 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.myapplication.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class SettingFragment extends Fragment {
+
+    private FloatingActionButton musicButton;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        musicButton.findViewById(R.id.audio_but);
+
+
     }
 
     @Nullable
