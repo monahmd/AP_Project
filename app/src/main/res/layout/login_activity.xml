@@ -6,39 +6,59 @@
     android:background="@drawable/photo3">
 
 
-    <EditText
-        android:id="@+id/username_login"
-        android:layout_width="290dp"
-        android:layout_height="45dp"
-        android:paddingRight="15dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:hint="@string/username"
-        android:textColor="@color/black"
-        android:background="@color/light_blue"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:layout_width="354dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="124dp"
+        android:background="@color/dark_blue"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202">
+        app:layout_constraintTop_toTopOf="parent">
 
-    </EditText>
+        <EditText
+            android:id="@+id/username_login"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/dark_blue_edit"
+            android:hint="@string/username"
+            android:paddingRight="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.202"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_light">
 
-    <EditText
-        android:id="@+id/password_login"
-        android:layout_width="290dp"
-        android:layout_height="45dp"
-        android:paddingRight="15dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:hint="@string/password"
-        android:textColor="@color/black"
-        android:background="@color/light_blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.327" />
+        </EditText>
+
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="33dp"
+            android:background="@color/dark_blue_edit"
+            android:hint="@string/password"
+            android:paddingRight="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.327"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_light"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/login_login"
@@ -46,11 +66,9 @@
         android:layout_height="63dp"
         android:text="@string/loginBotrom"
         android:textSize="25dp"
-        app:backgroundTint="#0FCF16"
-        android:textStyle="bold"
+        app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
