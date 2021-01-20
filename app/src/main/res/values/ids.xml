@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="audio_but" type="id">audioBut</item>
-    <item name="linearLayout2" type="id">linearNameSett</item>
-    <item name="now_name" type="id">nowName</item>
-    <item name="now_password" type="id">nowPass</item>
-    <item name="new_password" type="id">newPass</item>
-    <item name="new_password_again" type="id">repeatNewPass</item>
+    <item type="id"
+        name="audio_but"/>
+    <item name="linearLayout2" type="id"/>
+    <item name="now_name" type="id"/>
+    <item name="now_password" type="id"/>
+    <item name="new_password" type="id"/>
+    <item name="new_password_again" type="id"/>
 </resources>
