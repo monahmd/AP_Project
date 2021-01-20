@@ -14,16 +14,20 @@ public class MainActivity extends AppCompatActivity {
     private Button login;
     private Button register;
 
-    public static void main(String[] args)throws IOException {
-        Socket socket = new Socket("localhost" , 4444);
-        DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
-        DataInputStream inputStream =new DataInputStream(socket.getInputStream());
-        Login_activity.socket = socket;
-        Login_activity.dataInputStream = inputStream;
-        Login_activity.dataOutputStream = outputStream;
-        Register.socket = socket;
-        Register.dataInputStream = inputStream;
-        Register.dataOutputStream = outputStream;
+    public static void main(String[] args) {
+        try {
+            Socket socket = new Socket("localhost", 4444);
+            DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
+            DataInputStream inputStream = new DataInputStream(socket.getInputStream());
+            Login_activity.socket = socket;
+            Login_activity.dataInputStream = inputStream;
+            Login_activity.dataOutputStream = outputStream;
+            Register.socket = socket;
+            Register.dataInputStream = inputStream;
+            Register.dataOutputStream = outputStream;
+        }catch (IOException e){
+            e.printStackTrace();
+        }
 
     }
 
