@@ -21,13 +21,18 @@ public class Login_activity extends AppCompatActivity {
         setContentView(R.layout.login_activity);
 
         Button loginButton = this.findViewById(R.id.login_login);
-        EditText usernameLogin = this.findViewById(R.id.username_login);
-        EditText passwordLogin = this.findViewById(R.id.password_login);
+        EditText usernameLogin =(EditText) this.findViewById(R.id.username_login);
+        EditText passwordLogin = (EditText)this.findViewById(R.id.password_login);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
+
+                Thread thread = new Thread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        try  {
                     boolean done =false;
                     while (done == false) {
                         dataOutputStream.writeUTF("login");
@@ -37,7 +42,7 @@ public class Login_activity extends AppCompatActivity {
                         String passwordInput = passwordLogin.getText().toString();
                         dataOutputStream.writeUTF(passwordInput);
                         //intent
-                        dataOutputStream.flush();
+                        //dataOutputStream.flush();
                         command = dataInputStream.readUTF();
                         if(command.equals("not_exist")){
                             Toast.makeText(getApplicationContext(),"Wrong Username or Password ! \n Please try again",Toast.LENGTH_LONG ).show();
@@ -48,9 +53,12 @@ public class Login_activity extends AppCompatActivity {
                         }
                     }
 
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+                thread.start();
             }
         });
     }

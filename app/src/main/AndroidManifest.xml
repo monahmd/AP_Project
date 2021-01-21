@@ -18,6 +18,10 @@
         </activity>
         <activity android:name=".Login_activity"/>
         <activity android:name=".Register"/>
-    </application>
+        <activity android:name=".HomePageActivity"/>
 
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 </manifest>
