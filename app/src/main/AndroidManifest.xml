@@ -19,6 +19,7 @@
         <activity android:name=".Login_activity"/>
         <activity android:name=".Register"/>
         <activity android:name=".HomePageActivity"/>
+        <activity android:name=".GamePage"/>
 
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
